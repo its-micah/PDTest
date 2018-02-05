@@ -24,7 +24,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        self.toolbar.delegate = self
+        self.toolbar.delegate = self
         self.logTableView.delegate = self
         self.logTableView.dataSource = self
 

@@ -23,7 +23,7 @@ class ResearchProjectController: NSObject, UINavigationControllerDelegate {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let vc = mainStoryboard.instantiateViewController(withIdentifier: "ResearchVC") as! ViewController
         vc.researchProject = self.selectedProject
-
-        presentingViewController?.present(vc, animated: true, completion: nil)
+        presentingViewController?.navigationController?.pushViewController(vc, animated: true)
+        
     }
 }
