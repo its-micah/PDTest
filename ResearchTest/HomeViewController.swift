@@ -98,7 +98,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         items.append(developmentProjects)
 
 
-
     }
 
     func setupNavBar() {
