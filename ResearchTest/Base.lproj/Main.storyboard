@@ -223,14 +223,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Arp-G2-qWS">
-                                                    <rect key="frame" x="15" y="19" width="22" height="22"/>
+                                                    <rect key="frame" x="15" y="21.5" width="17" height="17"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="22" id="1Cy-yP-to0"/>
-                                                        <constraint firstAttribute="width" constant="22" id="tGo-ya-HKz"/>
+                                                        <constraint firstAttribute="height" constant="17" id="1Cy-yP-to0"/>
+                                                        <constraint firstAttribute="width" constant="17" id="tGo-ya-HKz"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4c-LH-OGS">
-                                                    <rect key="frame" x="53" y="19.5" width="38" height="20.5"/>
+                                                    <rect key="frame" x="48" y="19.5" width="38" height="20.5"/>
                                                     <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
