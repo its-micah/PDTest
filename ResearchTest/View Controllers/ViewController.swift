@@ -28,22 +28,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.logTableView.delegate = self
         self.logTableView.dataSource = self
 
-//        researchProject = ResearchProjectClass(title: "Stranger Things", projectType: .research, eventLog: ResearchLog(), notePad: NotePad(notes: []))
-//        let thing = Event(description: "Something happened", timestamp: "9:06")
-//        let thing2 = Event(description: "Woah there", timestamp: "1:05")
-//        let thing3 = Event(description: "Sup", timestamp: "0:05")
-//        let thing4 = Event(description: "Ship blows up", timestamp: "25:14")
-//
-//        researchProject?.eventLog.add(thing)
-//        researchProject?.eventLog.add(thing2)
-//        researchProject?.eventLog.add(thing3)
-//        researchProject?.eventLog.add(thing4)
-//
-//
-//        researchProject!.notePad.add("This is a new note")
-//        researchProject!.notePad.add("This is another note")
-//        researchProject!.notePad.add("Remember that big thing that happened?")
-
         self.navigationController?.navigationBar.topItem?.title = researchProject?.title
         customizeSegmentController()
         appendItems()

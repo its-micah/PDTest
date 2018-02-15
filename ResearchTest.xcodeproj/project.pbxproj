@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27E51E41203630EF00AEB1B3 /* IdeaLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E51E40203630EF00AEB1B3 /* IdeaLog.swift */; };
 		C70EC179201E2160000258BF /* ProjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70EC178201E2160000258BF /* ProjectType.swift */; };
 		C74D0F9C2012BA890044178C /* DevelopmentProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D0F9B2012BA890044178C /* DevelopmentProject.swift */; };
 		C74D0F9E2012BAC60044178C /* ResearchProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74D0F9D2012BAC60044178C /* ResearchProject.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27E51E40203630EF00AEB1B3 /* IdeaLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaLog.swift; sourceTree = "<group>"; };
 		C70EC178201E2160000258BF /* ProjectType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectType.swift; sourceTree = "<group>"; };
 		C74D0F9B2012BA890044178C /* DevelopmentProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentProject.swift; sourceTree = "<group>"; };
 		C74D0F9D2012BAC60044178C /* ResearchProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchProject.swift; sourceTree = "<group>"; };
@@ -90,6 +92,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27E51E3A20362AA200AEB1B3 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				C70EC178201E2160000258BF /* ProjectType.swift */,
+				C74D0F9B2012BA890044178C /* DevelopmentProject.swift */,
+				C74D0F9D2012BAC60044178C /* ResearchProject.swift */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		27E51E3B20362AF800AEB1B3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C76F98D420017E9100578272 /* ResearchLogTableViewCell.swift */,
+				C7EBCCF7200BF66D0017AA5F /* ProjectCell.swift */,
+				C76ECF4E20263BFA00E5CFF2 /* CellType.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		27E51E3C20362B3D00AEB1B3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C76ECF562027C06300E5CFF2 /* ResearchProjectController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		27E51E3D20362B5000AEB1B3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C76F98B6200175EB00578272 /* ViewController.swift */,
+				C77DAB8B20046CE0004D4321 /* AddContentViewController.swift */,
+				C74EF3FE200ABC8A0035D1B5 /* HomeViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		27E51E3E2036305200AEB1B3 /* Logs */ = {
+			isa = PBXGroup;
+			children = (
+				C76ECF5220263E0B00E5CFF2 /* ResearchLog.swift */,
+				27E51E40203630EF00AEB1B3 /* IdeaLog.swift */,
+			);
+			path = Logs;
+			sourceTree = "<group>";
+		};
+		27E51E3F2036306000AEB1B3 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				C74EF400200AF9A20035D1B5 /* TimeCodeLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
 		C76F98A8200175EA00578272 = {
 			isa = PBXGroup;
 			children = (
@@ -112,19 +169,13 @@
 			isa = PBXGroup;
 			children = (
 				C76F98B4200175EB00578272 /* AppDelegate.swift */,
-				C76F98B6200175EB00578272 /* ViewController.swift */,
-				C76F98D420017E9100578272 /* ResearchLogTableViewCell.swift */,
-				C7EBCCF7200BF66D0017AA5F /* ProjectCell.swift */,
-				C74D0F9B2012BA890044178C /* DevelopmentProject.swift */,
-				C76ECF4E20263BFA00E5CFF2 /* CellType.swift */,
 				C76ECF542026411100E5CFF2 /* ProjectFetcher.swift */,
-				C74D0F9D2012BAC60044178C /* ResearchProject.swift */,
-				C70EC178201E2160000258BF /* ProjectType.swift */,
-				C77DAB8B20046CE0004D4321 /* AddContentViewController.swift */,
-				C76ECF5220263E0B00E5CFF2 /* ResearchLog.swift */,
-				C74EF3FE200ABC8A0035D1B5 /* HomeViewController.swift */,
-				C74EF400200AF9A20035D1B5 /* TimeCodeLabel.swift */,
-				C76ECF562027C06300E5CFF2 /* ResearchProjectController.swift */,
+				27E51E3B20362AF800AEB1B3 /* Cells */,
+				27E51E3E2036305200AEB1B3 /* Logs */,
+				27E51E3A20362AA200AEB1B3 /* Projects */,
+				27E51E3D20362B5000AEB1B3 /* View Controllers */,
+				27E51E3F2036306000AEB1B3 /* Labels */,
+				27E51E3C20362B3D00AEB1B3 /* Controllers */,
 				C76F98B8200175EB00578272 /* Main.storyboard */,
 				C77DAB872004645E004D4321 /* AddContent.storyboard */,
 				C76F98D62001816B00578272 /* Model.swift */,
@@ -254,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C76F98B7200175EB00578272 /* ViewController.swift in Sources */,
+				27E51E41203630EF00AEB1B3 /* IdeaLog.swift in Sources */,
 				C76ECF552026411100E5CFF2 /* ProjectFetcher.swift in Sources */,
 				C76ECF572027C06300E5CFF2 /* ResearchProjectController.swift in Sources */,
 				C76ECF5320263E0B00E5CFF2 /* ResearchLog.swift in Sources */,
