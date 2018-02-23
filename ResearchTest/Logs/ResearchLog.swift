@@ -9,30 +9,55 @@
 import Foundation
 import UIKit
 
-struct Event {
-    var description: String
-    var timestamp: String
-}
-
 protocol LogProtocol {
     var logItems: Array<Any> { get }
     func add(_ item: Any)
 }
 
-final class ResearchLog: CellViewModelItem, LogProtocol {
+struct Event {
+    var description: String
+    var timestamp: String?
+}
+
+final class ResearchLog: LogProtocol {
     var logItems: Array<Any> = [Event]()
 
-    // I know this is bad below with the force unwrapping, how do I do this better?
+    var logItemsWithTime:Array<Event> = [Event]()
+
+//    func orderedEvents(listOfThings:[Any]) -> [Event] {
+//
+//    }
 
     var orderedEvents: [Event] {
-        return self.logItems.sorted {
-            ($0 as! Event).timestamp.compare(($1 as! Event).timestamp, options: .numeric) == .orderedAscending } as! [Event]
+//        let nonNilArray = self.logItems.flatMap{ thing in
+//            if let actualThing = thing as? Event {
+//                if let thingWithTime = actualThing.timestamp {
+//                    return actualThing
+//                }
+//
+//                return nil
+//            }
+//
+//            return nil
+//
+////            guard let actualThing = thing as? Event,
+////            let thingWithTime = actualThing.timestamp else {
+////                return nil
+////            }
+////            return thingWithTime
+//        }
+//
+//       return nonNilArray.sorted {($0 as! Event).timestamp.compare(($1 as! Event).timestamp, options: .numeric) == .orderedAscending } as! [Event]
+
+        return self.logItems.sorted {($0 as! Event).timestamp!.compare(($1 as! Event).timestamp!, options: .numeric) == .orderedAscending } as! [Event]
     }
 
     func add(_ item: Any) {
         self.logItems.append(item)
     }
+}
 
+extension ResearchLog: CellViewModelItem {
     var type: CellType {
         return .researchLogEvent
     }
@@ -48,5 +73,4 @@ final class ResearchLog: CellViewModelItem, LogProtocol {
     var icon: UIImage {
         return self.type.icon
     }
-
 }

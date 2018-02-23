@@ -16,7 +16,7 @@ protocol ProjectProtocol {
     var projectType: ProjectType { get }
 }
 
-class ResearchProjectClass: ProjectProtocol {
+final class ResearchProjectClass: ProjectProtocol {
     var title: String
     let projectType: ProjectType
     var eventLog: ResearchLog
